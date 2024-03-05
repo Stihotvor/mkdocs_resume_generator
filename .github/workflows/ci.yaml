@@ -28,8 +28,8 @@ jobs:
       pages: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: baileyjm02/markdown-to-pdf@v1
+      - uses: actions/checkout@v4.3.1
+      - uses: baileyjm02/markdown-to-pdf@v1.2.0
         with:
           input_dir: docs
           output_dir: pdfs
