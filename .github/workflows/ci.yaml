@@ -5,6 +5,22 @@ on:
     branches:
       - main
 jobs:
+  converttopdf:
+    name: Build PDF
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: baileyjm02/markdown-to-pdf@v1.2.0
+        with:
+          input_dir: docs
+          output_dir: pdfs
+          build_html: false
+      - uses: actions/upload-artifact@v4.3.1
+        with:
+          name: docs
+          path: pdfs
 
   deploy:
     permissions:
@@ -20,21 +36,3 @@ jobs:
       - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
 
-  converttopdf:
-    name: Build PDF
-    permissions:
-      contents: write
-      deployments: write
-      pages: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4.3.1
-      - uses: baileyjm02/markdown-to-pdf@v1.2.0
-        with:
-          input_dir: docs
-          output_dir: pdfs
-          build_html: false
-      - uses: actions/upload-artifact@v3
-        with:
-          name: docs
-          path: pdfs
