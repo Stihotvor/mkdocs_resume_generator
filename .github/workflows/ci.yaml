@@ -9,8 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        permissions:
+          contents: read
       - uses: actions/setup-python@v5
+        permissions:
+          contents: read
         with:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: mkdocs gh-deploy --force
+        permissions:
+          # Allow to write to the repository and update github pages
+          contents: write
