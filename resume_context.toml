@@ -1,0 +1,52 @@
+[header]
+name = "John Doe"
+title = "Software Developer & Tech Leader"
+email = "john.doe@example.com"
+phone = "+1234567890"
+linkedin = "linkedin.com/in/johndoe"
+github = "github.com/johndoe"
+
+[professional_summary]
+summary = "Experienced software developer and tech leader with a passion for Python. Skilled in developing web applications using Django and Flask. Strong advocate for test-driven development and agile methodologies."
+
+[skills_summary]
+programming_languages = ["Python", "Java", "JavaScript"]
+web_development = ["Django", "Flask", "React.js"]
+database = ["SQL", "MongoDB"]
+devops = ["Docker", "Kubernetes", "Jenkins"]
+other = ["Agile Methodologies", "Test-Driven Development (TDD)", "RESTful APIs"]
+
+[[experience_highlights]]
+company = "Tech Innovations Inc."
+title = "Senior Software Developer"
+duration = "Jan 2020 - Present"
+responsibilities = [
+    "Led a team of developers in the successful delivery of multiple web applications using Python and Django.",
+    "Implemented automated testing strategies resulting in a 30% reduction in bugs.",
+    "Mentored junior developers in best practices for software development and code review processes."
+]
+
+[[experience_highlights]]
+company = "Code Wizards Ltd."
+title = "Software Developer"
+duration = "Jun 2017 - Dec 2019"
+responsibilities = [
+    "Developed RESTful APIs using Python and Flask for client-server communication.",
+    "Collaborated with cross-functional teams to design and implement new features.",
+    "Resolved complex technical issues and optimized application performance."
+]
+
+[education]
+degree = "Bachelor of Science in Computer Science"
+institution = "University of Tech"
+graduation_year = 2017
+
+[[certifications]]
+title = "AWS Certified Developer - Associate"
+issued_by = "Amazon Web Services"
+year = 2020
+
+[[certifications]]
+title = "Certified Scrum Master (CSM)"
+issued_by = "Scrum Alliance"
+year = 2018

@@ -1,8 +1,7 @@
-# What is the project about?
 
-Current project allows technical guys, like Software Developers, Engineers, DevOps, etc. to create their own resume in a
-simple way. The project is based on a simple template that can be easily customized. The project is open source and can
-be found on GitHub.
+# Personal information
+## 
+
 
 # What is the goal of the project?
 
